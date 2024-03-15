@@ -16,7 +16,8 @@ public class VehicleResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON})
-    public Response findAll(){
+    public Response findAll()
+    {
         var vehicles = vehicleRepository.listAll();
         return Response.ok(vehicles).build();
     }
